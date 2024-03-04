@@ -1,4 +1,4 @@
--- Dado um n˙mero inteiro. Calcule e mostre o seu fatorial. (N„o usar entrada superior a 12)
+-- Dado um n√∫mero inteiro. Calcule e mostre o seu fatorial. (N√£o usar entrada superior a 12)
 Declare @num int,
 	@fat int
 
@@ -18,8 +18,8 @@ begin
 print 'Estouro de memoria'
 end
 
-/*Dados A, B, e C de uma equaÁ„o do 2o grau da fÛrmula AX2+BX+C=0. Verifique e mostre a 
-existÍncia de raÌzes reais e se caso exista, calcule e mostre. Caso n„o existam, exibir mensagem.*/
+/*Dados A, B, e C de uma equa√ß√£o do 2o grau da f√≥rmula AX2+BX+C=0. Verifique e mostre a 
+exist√™ncia de ra√≠zes reais e se caso exista, calcule e mostre. Caso n√£o existam, exibir mensagem.*/
 
 declare @a int, @b int, @c int, @x1 decimal(7,2), @x2 decimal(7,2), @d int
 set @a = -1
@@ -43,7 +43,7 @@ if(@d > 0) begin
 	print 'As raizes foram ' + cast(@x1 as varchar(5)) + ' ' + cast(@x2 as varchar(5))
 end
 
-/*Calcule e mostre quantos anos ser„o necess·rios para que Ana seja maior que Maria sabendo
+/*Calcule e mostre quantos anos ser√£o necess√°rios para que Ana seja maior que Maria sabendo
 que Ana tem 1,10 m e cresce 3 cm ao ano e Maria tem 1,5 m e cresce 2 cm ao ano.*/
 
 declare @ana decimal(7,2), @maria decimal(7,2), @anos int
@@ -58,7 +58,7 @@ while(@ana < @maria) begin
 end
 	print @anos
 
-/*Seja a seguinte sÈrie: 1, 4, 4, 2, 5, 5, 3, 6, 6, 4, 7, 7, ...*/
+/*Seja a seguinte s√©rie: 1, 4, 4, 2, 5, 5, 3, 6, 6, 4, 7, 7, ...*/
 
 declare @num1 int, @num2 int, @n int, @resultado varchar(100)
 set @num1 = 1
@@ -75,7 +75,7 @@ end
 	print @resultado
 
 /*Considerando a tabela abaixo, gere uma massa de dados, com 50 registros, para fins de teste
-com as regras estabelecidas (N„o usar constraints na criaÁ„o da tabela)*/
+com as regras estabelecidas (N√£o usar constraints na cria√ß√£o da tabela)*/
 	
 create table Produto (
 	codigo int not null,
@@ -96,12 +96,4 @@ while(@num <= 50)begin
 	set @num = @num + 1
 end
 
-select * from Produto
-
-
-
-
-
-
-
-	
+select * from Produto	
